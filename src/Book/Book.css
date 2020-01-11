@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    background: #ccc;
+  }
+
+
+  .text {
+    transform: rotateY(-170deg) scale(1.1);
+    padding-left: 20px;
+  }
+  
+  .book {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 380px;
+    cursor: pointer;
+    backface-visibility: visible;
+  }
+
+
+
+
+  .front {
+      text-align: center;
+      font-style: italic;
+      font-size: 24px;
+  }
+  
+  .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 280px;
+    height: 100%;
+    top: 0; left: 0;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+  }
+
+  .page1, .page2, .page3, .page4, .page5, .page6 {
+    width: 270px;
+    height: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .front, .back {
+    background: black;
+  }
+  
+  .front, .page1, .page3, .page5 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .back, .page2, .page4, .page6 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .page1 { 
+    background: #f8ecc2;
+    color: black;
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  }
+  
+  .page2 {
+    background: #f8ecc2;
+    color: black;
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  }
+  
+  .page3 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+    background: #f8ecc2;
+    color: black;
+  }
+  
+  .page4 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+    background: #f8ecc2;
+    color: black;
+  }
+  
+  .page5 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+    background: #f8ecc2;
+    color: black;
+  }
+  
+ 
+  .book:hover .front {
+    
+  }
+  
+  .book:hover .page1 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  }
+  
+  .book:hover .page2 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  }
+  
+  .book:hover .page3 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  }
+  
+  .book:hover .page4 {
+    transform: rotateY(-40deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  }
+  
+  .book:hover .page5 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  }
+  
+  

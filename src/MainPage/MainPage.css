@@ -1,0 +1,298 @@
+body {
+    
+    
+    background-color: rgb(50, 50, 50);
+
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .animation-box {
+    margin: 0 auto;
+  }
+  
+  .animation-container {
+    width: 100%;
+    height: 30rem;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 8%;
+    left: 0px;
+    color: white;
+    width: 100%;
+    margin: 0 auto
+  }
+
+  .nav-element {
+    margin-left: 100px; 
+   
+    display: inline-block ;
+  }
+
+  @keyframes rightFadeInOut {
+    0% {
+      position: absolute;
+      right: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      position: absolute;
+      right: 10rem;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      right: 10rem;
+    }
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+  
+    45% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+  
+  
+  .welcome {
+    font-size: 3.4rem;
+    width: 100vw;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    animation-name:fadein;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+  .welcome:hover {
+    color: #eee;
+  } 
+
+
+  .descritption {
+    font-size: 2.4rem;
+    max-width: 100vw;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    animation-name: fadein;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+
+  .descritption:hover {
+    color: #ccc;
+  } 
+
+
+  .button-row {
+    font-size: 2.4rem;
+    max-width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    animation-name: fadein;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    line-height: 1.5;
+  }
+  button {
+    background-color: black; /* Green */
+    border: 3px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .door-message {
+    font-size: 2.4rem;
+    max-width: 100vw;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    animation-name: fadein;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+  .book-container {
+    font-size: 2.4rem;
+    max-width: 100vw;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    animation-name: fadein;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+  
+
+
+
+  .icon-page1, .icon-page2, .icon-page3, .icon-page4, .icon-page5, .icon-page6 {
+    width: 60px;
+    height: 95%;
+    
+  }
+
+
+  .icon-front, .icon-back {
+    background: black;
+  }
+
+
+
+
+.icon-book {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100px;
+  cursor: pointer;
+  backface-visibility: visible;
+}
+
+.icon-front, .icon-back, .icon-page1, .icon-page2, .icon-page3, .icon-page4, .icon-page5, .icon-page6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 70px;
+  height: 100%;
+
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+}
+
+
+
+.icon-front, .icon-page1, .icon-page3, .icon-page5 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.icon-back, .icon-page2, .icon-page4, .icon-page6 {
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.icon-page1 { 
+  background: #f8ecc2;
+  box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  transform: rotateY(-150deg) scale(1.1);
+}
+
+.icon-page2 {
+  background: #f8ecc2;
+  box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  transform: rotateY(-30deg) scale(1.1);
+}
+
+.icon-page3 {
+  background: #f8ecc2;
+  box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  transform: rotateY(-140deg) scale(1.1);
+}
+
+.icon-page4 {
+  background: #f8ecc2;
+  box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  transform: rotateY(-40deg) scale(1.1);
+}
+
+.icon-page5 {
+  background: #f8ecc2;
+  box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  transform: rotateY(-130deg) scale(1.1);
+}
+
+.icon-page6 {
+  background: #f8ecc2;
+  box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+  transform: rotateY(-50deg) scale(1.1);
+}
+
+.icon-front {
+  transform: rotateY(-160deg) scale(1.1);
+}
+
+
+.icon-back {
+  transform: rotateY(-20deg) scale(1.1);
+}
+
+
+
+.card {
+  width: 77px;
+  height: 111px;
+  cursor: pointer;
+}
+
+.card-big {
+  width: 154px;
+  height: 222px;
+}
+
+.red-card {
+  width: 77px;
+  height: 111px;
+  border-radius: .5em;
+  background-color: rgba(179, 0, 0, 0.7);
+  border: 1px solid rgb(51, 0, 26);
+  cursor: pointer;
+}
+
+.red-card2 {
+  margin-bottom: 75px;
+ 
+  width: 154px;
+  height: 222px;
+  border-radius: .5em;
+  background-color: rgba(179, 0, 0, 0.7);
+  border: 1px solid rgb(51, 0, 26);
+  color: white
+
+}
+
+.carousel-inner {
+  text-align: -webkit-center;
+}
+
+.red-cards-container {
+  width: 500px;
+  margin-Top: 100px;
+}
