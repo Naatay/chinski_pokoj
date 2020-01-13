@@ -183,7 +183,7 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce</p></d
                 <div onClick={this.handleRedCardsMessageClick} style={{ display: (this.state.showRedCardsMessage ? 'inline' : 'none') }} className="descritption">
                 <p className='descritption' style={{padding:'30px'}}>Wracasz do podestu z księgą i kiedy jesteś już blisko niej, czujesz, że trącasz coś nogą. Jest
                 to małe, czarne pudełko.
-                Otwierając je dostrzegasz podobne znajdzie, plik kart, z tą różnicą, że one są w czerwonym
+                Otwierając je dostrzegasz podobny znajdzie, plik kart, z tą różnicą, że one są w czerwonym
                 kolorze.</p>
                 </div>
 
