@@ -89,6 +89,26 @@ body {
     background: #f8ecc2;
     color: black;
   }
+
+  .page6 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+    background: #f8ecc2;
+    color: black;
+  }
+
+  .page7 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+    background: #f8ecc2;
+    color: black;
+  }
+
+  .page8 {
+    box-shadow: 0 1em 3em 0 rgb(50, 50, 50);
+    background: #f8ecc2;
+    color: black;
+  }
+
+
   
  
   .book:hover .front {

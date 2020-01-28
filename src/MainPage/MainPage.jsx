@@ -62,7 +62,7 @@ class MainPage extends Component {
 
             blackBig: <img className='card-big descritption' src={card1} alt="Logo" />
 
-            
+
 
         };
         this.blackCardCursor = 'pointer'
@@ -127,7 +127,7 @@ class MainPage extends Component {
             showBlackCard: true,
             showRedCards: false,
             showBook: false
-            
+
         })
     }
 
@@ -339,7 +339,7 @@ class MainPage extends Component {
     }
 
 
-    handleDopsanowanieClick= () => {
+    handleDopsanowanieClick = () => {
         this.setState({
             newBlackCard: true,
             showDopasowanie: false,
@@ -368,24 +368,24 @@ class MainPage extends Component {
                 </div>
                 <div className=" content">
                     <div onClick={this.handleWelcomeClick} style={{ display: (this.state.showWelcome ? 'inline' : 'none') }} className="welcome">WITAJ W CHIŃSKIM POKOJU</div>
-                    <div onClick={this.handleDescriptionClick} style={{ display: (this.state.showDescription ? 'inline' : 'none') }} className="descritption"><p className='descritption' style={{ padding: '30px' }}>Dookoła panuje ciemność i cisza. <br /> <br />We wszechogarniającej czerni jesteś w stanie dostec
+                    <div onClick={this.handleDescriptionClick} style={{ display: (this.state.showDescription ? 'inline' : 'none') }} className="descritption"><p className='descritption' style={{ padding: '30px' }}>Dookoła panuje ciemność i cisza. <br /> <br />We wszechogarniającej czerni jesteś w stanie dostrzec
     jedynie dwa zwracające uwagę elementy. <br />Po lewej stronie widzisz poświatę w kształcie
-                                                                                                                                                                    prostokąta, prawdopodobnie drzwi,  natomiast z prawej nie wiedzieć czemu jesteś w stanie
-dokładnie widzieć leżącą na podeście książkę o ciemniej okładce</p></div>
+                                                                                                                                                                                        prostokąta, natomiast z prawej jesteś w stanie
+dokładnie widzieć leżącą na podeście książkę o ciemniej okładce.</p></div>
                     <div style={{ display: (this.state.showButtons ? 'inline' : 'none') }} className='button-row'>
                         <button style={{ marginRight: '20px' }} onClick={this.handleDoorClick} style={{ display: (this.state.showDoorButton ? 'inline' : 'none') }}  >PODEJDŹ DO DRZWI</button>
                         <button style={{ marginLeft: '20px' }} onClick={this.handleBookClick} style={{ display: (this.state.showBookButton ? 'inline' : 'none') }}>PRZYJRZYJ SIĘ KSIĄŻCE</button>
                     </div>
                     <div onClick={this.handleDoorMessageClick} className='door-message' style={{ display: (this.state.showDoorMessage ? 'inline' : 'none') }}>
                         <p className='door-message' style={{ padding: '30px' }}>Zbliżając się do poświaty upewniasz się o tym, że są to drzwi, jednak nie umożliwiają one
-        wyjścia z pokoju choćby ze względu na brak klamki, a pod naporem ani nie drgną.</p>
+        wyjścia z pokoju, a pod naporem ani nie drgną.</p>
                     </div>
                     <div style={{ display: (this.state.showBook ? 'inline' : 'none') }} class='book-container'> <Book firstTimeReading={this.state.firstTimeReading} onBookClose={this.bookReedFirstTime} /></div>
                 </div>
 
                 <div onClick={this.handleCardArrivalMessageClick} style={{ display: (this.state.showCardArrivalMessage ? 'inline' : 'none') }} className="descritption">
                     <p className='descritption' style={{ padding: '30px' }}>Spod drzwi wleciała do pokoju niewielka kartka. Podchodząc do niej bierzesz ją w dłoń.
-                    Nie jest większa niż pół strony zeszytu. Na czarnym tle dostrzegasz biały znak </p>
+                    Nie jest większa niż pół strony zeszytu. Na czarnym tle dostrzegasz biały znak. </p>
                 </div>
 
                 <div className='descritption' onClick={this.handleFirstTimeBlackCardClick} style={{ display: (this.state.showBlackCard ? 'inline' : 'none'), cursor: this.blackCardCursor }}>
@@ -394,8 +394,8 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce</p></d
 
                 <div onClick={this.handleRedCardsMessageClick} style={{ display: (this.state.showRedCardsMessage ? 'inline' : 'none') }} className="descritption">
                     <p className='descritption' style={{ padding: '30px' }}>Wracasz do podestu z księgą i kiedy jesteś już blisko niej, czujesz, że trącasz coś nogą. Jest
-                    to małe, czarne pudełko.
-                    Otwierając je dostrzegasz podobny znajdzie, plik kart, z tą różnicą, że one są w czerwonym
+                    to małe, czerwone pudełko.
+                    Otwierając je dostrzegasz, plik kart, z tą różnicą, że one są w czerwonym
                 kolorze.</p>
                 </div>
 
@@ -417,7 +417,7 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce</p></d
                 </div>
                 <div style={{ display: (this.state.showNavigation ? 'inline' : 'none') }} className='ans description'>
                     <Container>
-                        <Col xs={12} hidden={this.state.redCardSelected === null}><button style={{padding: '10px', marginBottom: '10px'}} onClick={this.checkIfCorrect}>WSUŃ POD DRZWI</button></Col>
+                        <Col xs={12} hidden={this.state.redCardSelected === null}><button style={{ padding: '10px', marginBottom: '10px' }} onClick={this.checkIfCorrect}>WSUŃ POD DRZWI</button></Col>
                         <Col xs={12}><h5>{this.state.answerMessage}</h5></Col>
                         <Row>
                             <div className='ans-element'>
@@ -436,20 +436,19 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce</p></d
 
                 <div style={{ display: (this.state.showLastPart ? 'inline' : 'none') }} className="descritption">
                     <div className='descritption'>
-                    <Row className='descritption'>
-                     <img className='card' src={card2} alt="card" />
-                    <img  style={{marginLeft: '5px'}} className='card' src={card1} alt="card" />
-                    <img style={{marginLeft: '5px'}} className='card' src={card2} alt="card" />
-                     <img style={{marginLeft: '5px'}} className='card' src={card3} alt="card" />
-                     <img style={{marginLeft: '5px'}} className='card' src={card4} alt="card" />
-                     <img style={{marginLeft: '5px'}} className='card' src={card5} alt="card" />
-                     <img style={{marginLeft: '5px'}} className='card' src={card6} alt="card" />
-                     <img style={{marginLeft: '5px'}} className='card' src={card7} alt="card" />
-                     <img style={{marginLeft: '5px'}} className='card' src={card8} alt="card" />
-                     </Row>
+                        <Row className='descritption'>
+                            <img className='card' src={card1} alt="card" />
+                            <img style={{ marginLeft: '5px' }} className='card' src={card2} alt="card" />
+                            <img style={{ marginLeft: '5px' }} className='card' src={card3} alt="card" />
+                            <img style={{ marginLeft: '5px' }} className='card' src={card4} alt="card" />
+                            <img style={{ marginLeft: '5px' }} className='card' src={card5} alt="card" />
+                            <img style={{ marginLeft: '5px' }} className='card' src={card6} alt="card" />
+                            <img style={{ marginLeft: '5px' }} className='card' src={card7} alt="card" />
+                            <img style={{ marginLeft: '5px' }} className='card' src={card8} alt="card" />
+                        </Row>
                     </div>
-                    <p className='last' style={{paddingTop: '30px'}} >„Środek przekazu sam jest przekazem”</p>
-                    <p className='last' >Marshal Mcluhan</p>
+                    <p className='last' style={{ paddingTop: '30px' }} >„Środek przekazu sam jest przekazem.”</p>
+                    <p className='last' style={{ fontSize: '25px' }}>Marshal Mcluhan</p>
                 </div>
 
                 <div className='descritption' onClick={this.handleDopsanowanieClick} style={{ display: (this.state.showDopasowanie ? 'inline' : 'none') }}>
@@ -458,10 +457,10 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce</p></d
 
                 <div className='descritption' onClick={this.handleBigBlackClick} style={{ display: (this.state.newBlackCard ? 'inline' : 'none') }}>
                     <p className='descritption' >W pokoju pojawiła się nowa karta</p>
-                    
+
                 </div>
-                <div  onClick={this.handleBigBlackClick} style={{ display: (this.state.newBlackCard ? 'inline' : 'none') }}>
-                {this.state.blackBig}
+                <div onClick={this.handleBigBlackClick} style={{ display: (this.state.newBlackCard ? 'inline' : 'none') }}>
+                    {this.state.blackBig}
                 </div>
             </div>
         );

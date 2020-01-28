@@ -106,8 +106,8 @@ class Book extends Component {
 
     page6Click = () => {
         this.setState({
-            page6Dge: -142,
-            page7Dge: -141,
+            page6Dge: -140,
+            page7Dge: -139,
         })
     }
 
@@ -155,20 +155,23 @@ class Book extends Component {
             transform: `rotateY(${this.state.page7Dge}deg) scale(1.1)`
         }
 
-        return (
+        let stylesPage8 = {
+            transform: `rotateY(${this.state.page8Dge}deg) scale(1.1)`
+        }
 
+        return (
             <div className="book">
                 <div onClick={this.closeBook} style={stylesBack} class="back"></div>
-                <div onClick={this.page5Click} style={stylesPage7} class="page7"><p className='text'>4</p><img className='card-big ' src={card7} alt="card" /></div>
-                <div onClick={this.page4Click} style={stylesPage6} class="page6"><p>3</p><img className='card-big ' src={card6} alt="card" /></div>
+                <div onClick={this.closeBook} style={stylesPage8} class="page6"><p>4</p><img className='card-big ' src={card8} alt="card" /></div>
+                <div onClick={this.page7Click} style={stylesPage7} class="page5"><p className='text'>4</p><img className='card-big ' src={card7} alt="card" /></div>
+                <div onClick={this.page6Click} style={stylesPage6} class="page6"><p>3</p><img className='card-big ' src={card6} alt="card" /></div>
                 <div onClick={this.page5Click} style={stylesPage5} class="page5"><p className='text'>3</p><img className='card-big ' src={card5} alt="card" /></div>
                 <div onClick={this.page4Click} style={stylesPage4} class="page4"><p>2</p><img className='card-big ' src={card4} alt="card" /></div>
                 <div onClick={this.page3Click} style={stylesPage3} class="page3"><p className='text'>2</p><img className='card-big ' src={card3} alt="card" /></div>
                 <div onClick={this.page2Click} style={stylesPage2} class="page2"><p>1</p><img className='card-big ' src={card2} alt="card" /></div>
-                <div style={stylesPage1} class="page1"><p className='text'>1</p><img className='card-big ' src={card1} alt="card" /></div>
-                <div onClick={this.openBook} style={stylesFront} className="front" ><p style={{ marginTop: '20px', color: '#876f70' }}>Co zrobić, <br /> kiedy do pokoju wlatują karteczki z chińskimi znakami.</p></div>
+                <div style={stylesPage1} class="page1"><p className='text'>1</p><img  className='card-big  ' src={card1} alt="card" /></div>
+                <div onClick={this.openBook} style={stylesFront} className="front" ><p style={{ marginTop: '40px', color: '#ffcc99' }}>Co zrobić, <br /> kiedy do pokoju wlatują karteczki z chińskimi znakami.</p></div>
             </div>
-
         );
     }
 }
