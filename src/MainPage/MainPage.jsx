@@ -395,8 +395,7 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce.</p></
                 <div onClick={this.handleRedCardsMessageClick} style={{ display: (this.state.showRedCardsMessage ? 'inline' : 'none') }} className="descritption">
                     <p className='descritption' style={{ padding: '30px' }}>Wracasz do podestu z księgą i kiedy jesteś już blisko niej, czujesz, że trącasz coś nogą. Jest
                     to małe, czerwone pudełko.
-                    Otwierając je dostrzegasz, plik kart, z tą różnicą, że one są w czerwonym
-                kolorze.</p>
+                    Otwierając je dostrzegasz, plik kart.</p>
                 </div>
 
                 <div className='red-cards-container' style={{ display: (this.state.showRedCards ? 'block' : 'none') }}>

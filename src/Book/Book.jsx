@@ -170,7 +170,7 @@ class Book extends Component {
                 <div onClick={this.page3Click} style={stylesPage3} class="page3"><p className='text'>2</p><img className='card-big ' src={card3} alt="card" /></div>
                 <div onClick={this.page2Click} style={stylesPage2} class="page2"><p>1</p><img className='card-big ' src={card2} alt="card" /></div>
                 <div style={stylesPage1} class="page1"><p className='text'>1</p><img  className='card-big  ' src={card1} alt="card" /></div>
-                <div onClick={this.openBook} style={stylesFront} className="front" ><p style={{ marginTop: '40px', color: '#ffcc99' }}>Co zrobić, <br /> kiedy do pokoju wlatują karteczki z chińskimi znakami.</p></div>
+                <div onClick={this.openBook} style={stylesFront} className="front" ><p style={{ marginTop: '40px', color: '#ffffff' }}>Co zrobić, <br /> kiedy do pokoju wlatują karteczki z chińskimi znakami.</p></div>
             </div>
         );
     }
