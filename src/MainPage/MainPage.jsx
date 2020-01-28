@@ -60,8 +60,8 @@ class MainPage extends Component {
 
             newBlackCard: false,
 
-            blackBig: <img className='card-big descritption' src={card1} alt="Logo" />
-
+            blackBig: <img className='card-big descritption' src={card1} alt="Logo" />,
+            showLeaveMessage: false,
 
 
         };
@@ -176,14 +176,23 @@ class MainPage extends Component {
     handleFirstTimeBlackCardClick = () => {
         if (this.state.firstTimeBlackCardClick) {
             this.setState({
-                showRedCards: true,
+                showLeaveMessage: true,
                 showBlackCard: false,
                 firstTimeBlackCardClick: false,
-                showNavigation: true,
+                
                 blackCardSelected: <img onClick={this.handleBlackCardClick} className='card' src={card1} alt="card" />
             })
             this.blackCardCursor = 'auto'
         }
+    }
+
+    handleLeaveMessageClick = () => {
+        this.setState({
+            showRedCards: true,
+            showLeaveMessage: false,
+            showNavigation: true,
+            blackCardSelected: <img onClick={this.handleBlackCardClick} className='card' src={card1} alt="card" />
+        })
     }
 
     handleRedCardsMessageClick = () => {
@@ -387,6 +396,11 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce.</p></
                     <p className='descritption' style={{ padding: '30px' }}>Spod drzwi wleciała do pokoju niewielka kartka. Podchodząc do niej bierzesz ją w dłoń.
                     Nie jest większa niż pół strony zeszytu. Na czarnym tle dostrzegasz biały znak. </p>
                 </div>
+
+                <div onClick={this.handleLeaveMessageClick} style={{ display: (this.state.showLeaveMessage ? 'inline' : 'none') }} className="descritption">
+                    <p className='descritption'>Spróbuj wyjść z pokoju... </p>
+                </div>
+
 
                 <div className='descritption' onClick={this.handleFirstTimeBlackCardClick} style={{ display: (this.state.showBlackCard ? 'inline' : 'none'), cursor: this.blackCardCursor }}>
                     {this.state.blackBig}
