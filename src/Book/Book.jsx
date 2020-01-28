@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './Book.css';
 
-import card1 from '../resources/1.png';
+import card1 from '../resources/1mirrored.png';
 import card2 from '../resources/2.png';
-import card3 from '../resources/3.png';
+import card3 from '../resources/3mirrored.png';
 import card4 from '../resources/4.png';
-import card5 from '../resources/5.png';
+import card5 from '../resources/5mirrored.png';
 import card6 from '../resources/6.png';
-import card7 from '../resources/7.png';
+import card7 from '../resources/7mirrored.png';
 import card8 from '../resources/8.png';
 
 class Book extends Component {
