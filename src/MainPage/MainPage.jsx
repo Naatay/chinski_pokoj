@@ -355,6 +355,10 @@ class MainPage extends Component {
         })
     }
 
+    restartPage = () => {
+        window.location.reload();
+    }
+
 
     render() {
         return (
@@ -462,6 +466,8 @@ dokładnie widzieć leżącą na podeście książkę o ciemniej okładce.</p></
                     </div>
                     <p className='last' style={{ paddingTop: '30px' }} >„Środek przekazu sam jest przekazem.”</p>
                     <p className='last' style={{ fontSize: '25px' }}>Marshal Mcluhan</p>
+                    <button style={{ padding: '10px', marginTop: '30px' }} onClick={this.restartPage}>ROZPOCZNIJ OD NOWA</button>
+
                 </div>
 
                 <div className='descritption' onClick={this.handleDopsanowanieClick} style={{ display: (this.state.showDopasowanie ? 'inline' : 'none') }}>
